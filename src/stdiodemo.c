@@ -58,7 +58,7 @@ main(void)
   stdout = stdin = &uart_str;
   stderr = &lcd_str;
 
-  fprintf(stderr, "Hello world!\n");
+  fprintf(stdout, "Hello world!\n");
 
   for (;;)
     {

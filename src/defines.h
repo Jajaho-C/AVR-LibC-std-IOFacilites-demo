@@ -10,6 +10,7 @@
  *
  * $Id: defines.h 2186 2010-09-22 10:25:15Z aboyapati $
  */
+#define __AVR_ATmega328P__
 
 /* CPU frequency */
 #define F_CPU 1000000UL
@@ -18,11 +19,11 @@
 #define UART_BAUD  9600
 
 /* HD44780 LCD port connections */
-#define HD44780_RS A, 6
-#define HD44780_RW A, 4
-#define HD44780_E  A, 5
+#define HD44780_RS B, 6
+#define HD44780_RW B, 4
+#define HD44780_E  B, 5
 /* The data bits have to be not only in ascending order but also consecutive. */
-#define HD44780_D4 A, 0
+#define HD44780_D4 B, 0
 
 /* Whether to read the busy flag, or fall back to
    worst-time delays. */
